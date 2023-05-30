@@ -5,6 +5,7 @@ on:
     branches: [ "master" ]
   pull_request:
     branches: [ "develop", "master" ]
+    type: [ "opened", "reopened" ]
 
 concurrency:
   group: ${{ github.ref }}
